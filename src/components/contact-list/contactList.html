@@ -1,0 +1,11 @@
+<style>
+    .spin {
+        color: red;
+    }
+</style>
+<input type="text" ng-model="input" ng-class="{'spin': input=='spin'}"></input>
+<p>{{input}}</p>
+<p ng-if="input=='spin'">SPIIIN</p>
+<ul ng-repeat="cont in ctrl.contacts| filter:input">
+    <li><a ui-sref="app.contact-details({name:cont.name,surname:cont.surname})">{{cont.name|capFilt}}</a></li>
+</ul>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matoilic/AngularWorkshop.git"
+    "url": "git+https://github.com/nestabur/AngularWorkshop.git"
   },
   "keywords": [
     "angular",

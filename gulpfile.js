@@ -18,7 +18,7 @@ gulp.task('connect', function() {
     connect.server({
         root: [__dirname],
         livereload: false,
-        port: 8088,
+        port: 8089,
         middleware: function(connect) {
             return [
                 connect().use(webpackDevMiddleware(compiler, {

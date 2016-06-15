@@ -36,7 +36,7 @@ h1 button {
     font-size: 1rem;
 }
 
-input.ng-invalid {
+input.ng-invalid.ng-dirty {
     background-color: rgb(250, 200, 200);
 }
 
