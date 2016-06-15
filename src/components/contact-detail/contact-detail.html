@@ -3,7 +3,7 @@
 </div>
 
 <div class="contact-detail">
-    <form name="contactForm" novalidate >
+    <form name="contactForm" novalidate ng-submit="contactDetailController.onFormSubmit()">
         <p>
             <label for="">Name</label><br/>
             <input type="text" name="firstName" ng-model="contactDetailController.contact.first_name" required>
@@ -29,6 +29,7 @@
             <div ng-show="contactForm.email.$error.required || contactForm.email.$error.touched">
                 <span >Email required</span>
             </div>
+        <robo-hash email = "contactDetailController.contact.email"></robo-hash>
         </p>
 
         <p>
